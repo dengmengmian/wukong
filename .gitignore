@@ -5,3 +5,6 @@
 
 # Ignore weibo data file
 testdata/weibo_data.txt
+.DS_Store
+.idea
+.vscode

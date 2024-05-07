@@ -3,17 +3,18 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/huichen/gobo"
-	"github.com/huichen/gobo/contrib"
 	"io/ioutil"
 	"log"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/huichen/gobo"
+	"github.com/huichen/gobo/contrib"
 )
 
 var (
-	access_token = flag.String("access_token", "", "用户的访问令牌")
+	access_token = flag.String("access_token", "c231f4534d3a69265935eb1898338581", "用户的访问令牌")
 	weibo        = gobo.Weibo{}
 	users_file   = flag.String("users_file", "users.txt", "从该文件读入要下载的微博用户名，每个名字一行")
 	output_file  = flag.String("output_file", "weibo_data.txt", "将抓取的微博写入下面的文件")
